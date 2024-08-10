@@ -214,6 +214,7 @@ font-family: "Roboto", "sans-serif";
     background-position: center;
     background-color: #F5F4FA;
     margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 .content-item.antenna-icon::before {
@@ -231,6 +232,7 @@ font-family: "Roboto", "sans-serif";
 .content-item.astronaut-icon::before {
     background-image: url(../images/svg/astronaut\ 1.svg);
 }
+
 /* -------------------------------------------------------------------------------- */
 .content-text {
     font-size: 14px;
@@ -315,7 +317,8 @@ font-family: "Roboto", "sans-serif";
 
     margin-right: 30px;
     border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 2px 3px 0px #0000001F;
+    box-shadow: 0px 2px 1px 0px #00000033,0px 1px 1px 0px #00000024,0px 1px 3px 0px #0000001F;
+    ;
 }
 
 .team-item:last-child {
@@ -345,9 +348,63 @@ font-family: "Roboto", "sans-serif";
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--title-color);
-
 }
 
+
+/* -----------------------------------CLIENT----------------------------------- */
+
+.client {
+    padding: 94px 0;
+}
+
+.client-text {
+    font-family: Roboto;
+font-size: 36px;
+font-weight: 700;
+line-height: 42.19px;
+letter-spacing: 0.03em;
+text-align: center;
+color: var(--text-color);
+
+margin-bottom: 50px;
+}
+
+.client-list {
+    display: flex;
+}
+
+.client-list :not(:last-child) {
+    margin-right: 30px;
+}
+
+.client-item {
+    width: 170px;
+    height: 92px;
+    outline: solid 1px #AFB1B8;
+    border-radius: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.client-item:nth-child(1) {
+    background-image :url(../images/svg/Logo.svg);
+}
+.client-item:nth-child(2) {
+    background-image: url(../images/svg/Logo-2.svg);
+}
+.client-item:nth-child(3) {
+    background-image: url(../images/svg/Logo-3.svg);
+}
+.client-item:nth-child(4) {
+    background-image: url(../images/svg/Logo-4.svg);
+}
+.client-item:nth-child(5) {
+    background-image: url(../images/svg/Logo-5.svg);
+}
+.client-item:nth-child(6) {
+    background-image: url(../images/svg/Logo-6.svg);
+}
 /* -----------------------------------FOOTER----------------------------------- */
 .footer{
     background-color:#2F303A;
