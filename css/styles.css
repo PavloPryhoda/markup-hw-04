@@ -131,6 +131,10 @@ font-family: "Roboto", "sans-serif";
 .hero {
     padding: 200px 0;
     background-color:#2F303A;
+    background-image: url(../images/Img-hero.png);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: center;
 }
 
 .hero-container {
@@ -493,6 +497,7 @@ margin-bottom: 50px;
 
 .footer-box {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-logo {
@@ -569,6 +574,10 @@ address {
 
 /* -----------------------------------SOCIAL-LIST----------------------------------- */
 
+.footer-box-social {
+    margin-left: 70px;
+}
+
 .footer-social-text {
 font-size: 14px;
 font-weight: 700;
@@ -576,8 +585,41 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-align: left;
 color: #ffffff;
+
+margin-bottom: 20px;
 }
 
+.footer-social-list {
+    display: flex;
+}
+
+/* .footer-social-item {
+} */
+
+.footer-social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #FFFFFF1A;
+
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background: var(--accent-color);
+}
+
+.footer-social-svg {
+    width: 100%;
+    fill: #ffffff;
+}
 
 /* -----------------------------------PORTFOLIO----------------------------------- */
 
